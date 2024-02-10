@@ -12,8 +12,8 @@ class Solution {
         if(current.size() == nums.length){
             result.add(new ArrayList<>(current));
         }
-
-        for(int i=0;i<nums.length;i++){
+        else{
+            for(int i=0;i<nums.length;i++){
             if(current.contains(nums[i])){
                 continue;
             }
@@ -22,5 +22,6 @@ class Solution {
             current.remove(current.size() - 1);
         }
     }
+        }
 
 }
